@@ -89,12 +89,33 @@ body {
   }
 
   /* GUIDE 3: reveal nav when toggled (use ~ combinator) */
+  #menu-toggle:checked ~ .nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+  }
 
   /* GUIDE 4: style nav as vertical panel */
   /* 4-1) How the link inside of nav should be displayed? */  
+  .nav a {
+    display: block;
+    padding: 12px 16px;
+  }
 
   /* 4-2) Where the nav should be positioned? */
-   
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+  }
 }
 /* (Optional) X animation */
 #menu-toggle:checked + .hamburger span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
