@@ -79,8 +79,14 @@ body {
 @media (max-width: 720px) {
 
   /* GUIDE 1: hide the horizontal nav by default on small screens */
+  .nav {
+    display: none;
+  }
 
   /* GUIDE 2: show the hamburger on small screens */
+  .hamburger {
+    display: block;
+  }
 
   /* GUIDE 3: reveal nav when toggled (use ~ combinator) */
 
